@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+/* ================
+ Menu part start
+================= */
+.main_menu{
+    padding: 20px 0 !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.menu_logo{
+    width: 110px;
+}
+.main_menu ul{
+    gap: 22px;
+}
+.menu_button a{
+    padding: 10px 30px;
+    border: 2px solid #f75023;
+    border-radius: 25px;
+    color: #353535;
+    position: relative;
+    overflow: hidden;
+    transition: .2s;
+    margin-left: 30px;
+    z-index: 2;
+}
+.menu_button a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #f75023;
+    transition: all linear .2s;
+    z-index: -1;
+}
+.menu_button a:hover:after{
+    height: 100%;
+    z-index: -2;
+}
+.menu_button a:hover{
+    color: #fff;
+}
+/* ================
+ Menu part end
+================= */
+/* ================
+ banner part start
+================= */
+#banner{
+    padding: 260px 0;
+}
+.banner_img{
+    width: 320px;
+    position: relative;
+}
+.ai_anim-3,
+.ai_anim-2,
+.ai_anim-1{
+    width: 50px;
+}
+.ai_anim-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: anim_1 2s infinite alternate linear;
+}
+.ai_anim-2{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    animation: anim_1 2s infinite alternate linear;
+}
+.ai_anim-3{
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    animation: anim_1 2s infinite alternate linear;
+}
+
+@keyframes anim_1 {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(30%);
+        
+    }
+}
+/* ================
+ banner part end
+================= */
+/* ================
+ Menu part start
+================= */
+/* ================
+ Menu part end
+================= */
+/* ================
+ Menu part start
+================= */
+/* ================
+ Menu part end
+================= */
